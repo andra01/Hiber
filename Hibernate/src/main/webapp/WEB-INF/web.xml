@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  pt. Servlet 2.4 deployment descriptor -->
+<!--  J2EE 1.4 XML schema, namespace is http://java.sun.com/xml/ns/j2ee   -->
+
+<web-app xmlns="http://java.sun.com/xml/ns/j2ee"
+	      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	      xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee 
+	      http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd"
+	      version="2.4">
+
+  <display-name>WebApp</display-name>
+    
+     <servlet>
+        <servlet-name>Hibernate</servlet-name>
+        <servlet-class>com.babel.servlets.Hibernate</servlet-class>
+    </servlet>
+
+	<servlet>
+		<servlet-name>Login</servlet-name>
+		<servlet-class>com.babel.servlets.Login</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>Greeting</servlet-name>
+		<servlet-class>com.babel.servlets.Greeting</servlet-class>
+	</servlet>
+	 
+	<servlet-mapping>
+		<servlet-name>Login</servlet-name>
+		<url-pattern>/Login</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>Greeting</servlet-name>
+		<url-pattern>/Greeting</url-pattern>
+	</servlet-mapping>
+	     
+    
+
+    <servlet-mapping>
+        <servlet-name>Hibernate</servlet-name>
+        <url-pattern>/Hibernate</url-pattern>
+    </servlet-mapping>
+
+</web-app>
+
+

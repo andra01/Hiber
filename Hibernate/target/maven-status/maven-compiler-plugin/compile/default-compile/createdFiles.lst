@@ -1,0 +1,16 @@
+entities\ProjectId.class
+entities\UserHasTask.class
+entities\Release.class
+entities\Role.class
+entities\CommentId.class
+entities\Priority.class
+entities\TaskId.class
+entities\Comment.class
+entities\UserHasTaskId.class
+entities\User.class
+com\babel\servlets\Login.class
+entities\Status.class
+entities\UserId.class
+com\babel\servlets\Greeting.class
+entities\Task.class
+entities\Project.class
